@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squares</title>
+
+<style>
+
+body {
+font-family: Arial;
+background-color: #f9f9f9;
+padding: 20px;
+}
+
+.card {
+background-color: white;
+padding: 15px;
+margin: 10px;
+border-radius: 8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Squares</h1>
+
+{% for r in results %}
+
+<div class="card">
+
+<h2>{{ r.number }}</h2>
+
+<p>Square: {{ r.square }}</p>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>
